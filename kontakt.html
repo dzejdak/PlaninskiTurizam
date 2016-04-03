@@ -6,6 +6,7 @@
 		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="style.css">
+		<script type="text/javascript" src="myjs.js"></script>
 	</head>
 	<body>
 		<div class="wrap">
@@ -27,19 +28,19 @@
 						<legend>Kontakt forma:</legend>
 						<div class="form-group">
 							<label for="ime">Ime</label>
-							<input type="text" id="ime">
+							<input type="text" id="ime" onkeypress="validirajIme()">
 						</div>
 						<div class="form-group">
 							<label for="prezime">Prezime</label>
-							<input type="text" id="prezime">
+							<input type="text" id="prezime" onkeypress="validirajPrezime()">
 						</div>
 						<div class="form-group">
 							<label for="email">Email</label>
-							<input type="email" id="email">
+							<input type="email" id="email" onkeypress="validirajEmail()">
 						</div>
 						<div class="form-group">
 							<label for="tel">Telefon</label>
-							<input type="tel" id="tel">
+							<input type="tel" id="tel" onkeypress="validirajTelefon()">
 						</div>
 						<div class="form-group">
 							<label for="bday">Datum rođenja</label>
